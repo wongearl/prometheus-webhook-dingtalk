@@ -87,7 +87,7 @@ func (s *SecretURL) Copy() SecretURL {
 	return v
 }
 
-var secretRE = regexp.MustCompile(`(?i)(secret|token|key|nonce|digest)`)
+var secretRE = regexp.MustCompile(`(?i)(secret|key|nonce|digest)`)
 
 // MarshalYAML implements the yaml.Marshaler interface for SecretURL.
 func (s SecretURL) MarshalYAML() (interface{}, error) {
